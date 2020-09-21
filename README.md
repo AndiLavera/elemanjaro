@@ -28,6 +28,12 @@ buildiso -f -p eos -t ./
 # Iso will be in the manjaro-eos/oem/eos/1.0 folder after building
 ```
 
+## This vs Manjaro Gnome
+
+- `Gnome-shell` completely removes as it clashes with `Gala`
+- `Gdm` replaced with `lightdm` with `pantheon-greeter` theme installed
+- Replaced numerous GNOME apps with the Elementary counter-part
+
 ## Current Focus
 
 Fix bugs to make this spin more stable
