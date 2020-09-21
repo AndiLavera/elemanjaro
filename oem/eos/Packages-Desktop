@@ -1,0 +1,192 @@
+# Networking
+avahi
+networkmanager
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+nss-mdns
+modemmanager
+openresolv
+ntp
+openssh
+netctl
+usb_modeswitch
+
+# Sound/Audio/Video
+alsa-firmware
+alsa-utils
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+>extra libdvdcss
+manjaro-alsa
+manjaro-pulse
+pulseaudio-bluetooth
+pulseaudio-ctl
+pulseaudio-zeroconf
+
+# Connect
+gvfs
+gvfs-afc
+gvfs-mtp
+gvfs-google
+gvfs-smb
+
+# Display Manager
+lightdm
+lightdm-pantheon-greeter
+
+# Desktop Environment
+gnome-keyring
+gnome-session
+gnome-settings-daemon
+mutter
+pantheon
+switchboard-plug-desktop
+switchboard-plug-locale
+switchboard-plug-security-privacy
+
+# CLI Tools
+pacui
+mc
+manjaro-ranger-settings
+bmenu
+
+# Theming
+
+## GTK Themes
+adwaita-maia
+gtk-theme-elementary
+
+## Wallpapers
+manjaro-artwork
+illyria-wallpaper
+elementary-wallpapers # -git - elementary-wallpapers puts the wallpapers in `/usr/share/wallpapers`. The -git version puts them in the right location but doesn't build
+
+## Icons
+papirus-maia-icon-theme
+adwaita-icon-theme
+elementary-icon-theme
+
+## Fonts
+noto-fonts               		# default font
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+>extra noto-fonts-cjk           # asian fonts
+>extra noto-fonts-compat
+
+## Cursors
+
+# Manjaro
+manjaro-dynamic-wallpaper
+>extra manjaro-documentation-en
+>extra manjaro-aur-support
+
+# Applications
+gedit
+gparted
+manjaro-hello
+manjaro-application-utility
+manjaro-log-helper
+manjaro-settings-manager
+manjaro-settings-manager-notifier
+>basic epiphany
+>extra dconf-editor
+>extra firefox
+>extra firefox-gnome-theme-maia
+>extra rygel
+>extra yelp
+>extra caffeine-ng
+>extra transmission-gtk
+>extra ffmpegthumbnailer
+>extra gnome-font-viewer
+>extra gnome-maps
+>extra timeshift
+>extra deja-dup
+>extra webapp-manager
+
+# Print/Scan
+pantheon-print
+>extra manjaro-printer
+>extra simple-scan 
+>extra gtk3-print-backends
+
+# Settings
+manjaro-browser-settings
+mousetweaks
+manjaro-hotfixes
+
+# Package Management
+pamac-gtk
+pamac-gnome-integration
+>extra snapd-glib
+>extra pamac-snap-plugin
+>extra pamac-flatpak-plugin
+>extra apparmor
+
+# Utils
+polkit-gnome
+powertop
+sushi
+fprintd #need for finger id reader
+>extra kernel-alive
+>extra simple-scan
+>basic squashfs-tools
+
+# File Roller
+file-roller
+>extra p7zip
+>extra unrar
+>extra unace
+>extra lrzip
+
+# Xorg Input
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-libinput
+xf86-input-void
+>extra xf86-input-wacom 		# Support for tablet and pen display ( wacom ecc. )
+
+# Xorg Server/Graphics
+mesa-demos
+>multilib lib32-mesa-demos
+numlockx
+xdg-user-dirs
+xdg-user-dirs-gtk
+xorg-server
+xorg-twm
+xorg-xinit
+xdg-utils
+xorg-server
+xorg-twm
+xorg-xinit
+
+# Uncategorized
+>extra alacarte
+>extra baobab
+dmidecode
+gthumb
+>extra mntray
+gtksourceview-pkgbuild # ighlight for PKGBUILD
+>extra evolution-data-server
+>extra seahorse
+grilo-plugins
+gufw
+ibus
+inxi
+mobile-broadband-provider-info
+terminus-font-otb
+totem
+tracker
+tracker-miners
+qgnomeplatform
+>extra vino
+>extra libappindicator-gtk3
+>basic lighter-gnome
+>basic disable-tracker
