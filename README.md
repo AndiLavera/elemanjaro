@@ -28,6 +28,10 @@ buildiso -f -p eos -t ./
 # Iso will be in the manjaro-eos/oem/eos/1.0 folder after building
 ```
 
+## Current Focus
+
+Fix bugs to make this spin more stable
+
 ## Resources
 
 - [Manjaro Build Iso Docs](https://wiki.manjaro.org/Build_Manjaro_ISOs_with_buildiso)
