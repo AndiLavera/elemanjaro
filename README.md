@@ -1,137 +1,33 @@
-iso-profiles
-==========================
+# Manjaro EOS
 
-###### profile.conf
+This is a spin of manjaro gnome that utilizes the Pantheon DE. 
 
-~~~
-##########################################
-###### use this file in the profile ######
-##########################################
+> Note: State: Alpha, I am using as a daily driver however I recommend to install it in a VM for testing.
 
-# use multilib packages; x86_64 only
-# multilib="true"
+## Building
 
-# use extra packages as defined in pkglist to activate a full profile
-# extra="false"
+Install git & manjaro tools:
 
-################ install ################
+```sh
+pamac install manjaro-tools-iso git
+```
 
-# default displaymanager: none
-# supported; lightdm, sddm, gdm, lxdm, mdm
-# displaymanager="none"
+Create a `manjaro-tools.conf` file in `~/.config/manjaro-tools` & paste in:
 
-# Set to false to disable autologin in the livecd
-# autologin="true"
+```
+dist_codename="Mikah-Hera"
+dist_release=1.0
+```
 
-# nonfree xorg drivers
-# nonfree_mhwd="true"
+```sh
+git clone https://github.com/andrewc910/manjaro-eos.git
+cd manjaro-eos
+buildiso -f -p eos -t ./
+# Iso will be in the manjaro-eos/oem/eos/1.0 folder after building
+```
 
-# possible values: grub;systemd-boot
-# efi_boot_loader="grub"
+## Resources
 
-# configure calamares for netinstall
-# netinstall="false"
-
-# configure calamares to use chrootcfg instead of unpackfs; default: unpackfs
-# chrootcfg="false"
-
-# use geoip
-# geoip="true"
-
-# unset defaults to given values
-# names must match systemd service names
-# enable_systemd=('bluetooth' 'cronie' 'ModemManager' 'NetworkManager' 'org.cups.cupsd' 'tlp' 'tlp-sleep')
-# disable_systemd=()
-
-# unset defaults to given values,
-# names must match openrc service names
-# enable_openrc=('acpid' 'bluetooth' 'elogind' 'cronie' 'cupsd' 'dbus' 'syslog-ng' 'NetworkManager')
-# disable_openrc=()
-
-# unset defaults to given values
-# addgroups="video,power,disk,storage,optical,network,lp,scanner,wheel"
-
-# the same workgroup name if samba is used
-# smb_workgroup="Manjaro"
-
-################# live-session #################
-
-# unset defaults to given value
-# hostname="manjaro"
-
-# unset defaults to given value
-# username="manjaro"
-
-# unset defaults to given value
-# password="manjaro"
-
-# the login shell
-# defaults to bash
-# login_shell=/bin/bash
-
-# unset defaults to given values
-# names must match systemd service names
-# services in enable_systemd array don't need to be listed here
-# enable_systemd_live=('manjaro-live' 'mhwd-live' 'pacman-init' 'mirrors-live')
-
-# unset defaults to given values,
-# names must match openrc service names
-# services in enable_openrc array don't need to be listed here
-# enable_openrc_live=('manjaro-live' 'mhwd-live' 'pacman-init' 'mirrors-live')
-~~~
-
-###### New Packagelist tags
-
-~~~
->openrc
->systemd
-
->i686
->x86_64
->multilib
-
->nonfree_default
->nonfree_i686
->nonfree_x86_64
->nonfree_multilib
-
->manjaro
-
->basic
->extra
-~~~
-
-###### Packages-Root
-
-* Contains root image packages
-* ideally no xorg
-
-###### Packages-Desktop
-
-* Contains the desktop image packages
-* desktop environment packages go here
-
-###### Packages-Mhwd
-
-* Contains the MHWD driver packages repo
-
-###### Packages-Live
-
-* Contains packages you only want in live session but not installed on the target system with installer
-* default files are in shared folder and can be symlinked or defined in a real file
-
-###### buildiso can be configured to use custom repos
-
-* create a user-repos.conf
-
-~~~
-${profile_dir}/user-repos.conf
-~~~
-
-**Add only your repos to user-repos.conf!**
-
-**Important**: Only online repos is allowed in the user-repos.conf. Buildiso will fail on file-based repos.
-
-
-###### Calamares
-* netgroups definitions go in [this](https://github.com/manjaro/calamares-netgroups) repo please
+- (Manjaro Build Iso Docs)[https://wiki.manjaro.org/Build_Manjaro_ISOs_with_buildiso]
+- (Elementary OS)[https://elementary.io/]
+- (Manjaro Tools Repo)[https://gitlab.manjaro.org/tools/development-tools/manjaro-tools]
