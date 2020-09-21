@@ -19,6 +19,8 @@ dist_codename="Mikah-Hera"
 dist_release=1.0
 ```
 
+Run:
+
 ```sh
 git clone https://github.com/andrewc910/manjaro-eos.git
 cd manjaro-eos
