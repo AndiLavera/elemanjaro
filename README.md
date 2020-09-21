@@ -1,12 +1,16 @@
-iso-profiles
-==========================
+# Manjaro-EOS
 
-###### profile.conf
+This is a spin of manjaro gnome that utilizes the Pantheon DE. 
+
+> Note: State: Alpha, I am using as a daily driver however I recommend to install it in a VM for testing.
+
+
+##### profile.conf
 
 ~~~
-##########################################
-###### use this file in the profile ######
-##########################################
+###################################
+##### use this file in the profile #####
+###################################
 
 # use multilib packages; x86_64 only
 # multilib="true"
@@ -14,7 +18,7 @@ iso-profiles
 # use extra packages as defined in pkglist to activate a full profile
 # extra="false"
 
-################ install ################
+############## install ##############
 
 # default displaymanager: none
 # supported; lightdm, sddm, gdm, lxdm, mdm
@@ -54,7 +58,7 @@ iso-profiles
 # the same workgroup name if samba is used
 # smb_workgroup="Manjaro"
 
-################# live-session #################
+############### live-session ###############
 
 # unset defaults to given value
 # hostname="manjaro"
@@ -80,7 +84,7 @@ iso-profiles
 # enable_openrc_live=('manjaro-live' 'mhwd-live' 'pacman-init' 'mirrors-live')
 ~~~
 
-###### New Packagelist tags
+##### New Packagelist tags
 
 ~~~
 >openrc
@@ -101,26 +105,26 @@ iso-profiles
 >extra
 ~~~
 
-###### Packages-Root
+##### Packages-Root
 
 * Contains root image packages
 * ideally no xorg
 
-###### Packages-Desktop
+##### Packages-Desktop
 
 * Contains the desktop image packages
 * desktop environment packages go here
 
-###### Packages-Mhwd
+##### Packages-Mhwd
 
 * Contains the MHWD driver packages repo
 
-###### Packages-Live
+##### Packages-Live
 
 * Contains packages you only want in live session but not installed on the target system with installer
 * default files are in shared folder and can be symlinked or defined in a real file
 
-###### buildiso can be configured to use custom repos
+##### buildiso can be configured to use custom repos
 
 * create a user-repos.conf
 
@@ -133,5 +137,5 @@ ${profile_dir}/user-repos.conf
 **Important**: Only online repos is allowed in the user-repos.conf. Buildiso will fail on file-based repos.
 
 
-###### Calamares
+##### Calamares
 * netgroups definitions go in [this](https://github.com/manjaro/calamares-netgroups) repo please
