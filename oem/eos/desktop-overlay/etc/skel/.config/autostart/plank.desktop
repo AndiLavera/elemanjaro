@@ -3,5 +3,5 @@ Name=Plank
 Type=Application
 Exec=/usr/bin/plank
 Icon=plank
-Comment=A Manjaro Linux announcements notification app
+Comment=The main application dock
 X-GNOME-Autostart-enabled=true

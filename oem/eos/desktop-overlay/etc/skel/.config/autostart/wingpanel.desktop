@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Wingpanel
-Type=Application
-Exec=/usr/bin/wingpanel
-Icon=wingpanel
-Comment=A Manjaro Linux announcements notification app
-X-GNOME-Autostart-enabled=true
