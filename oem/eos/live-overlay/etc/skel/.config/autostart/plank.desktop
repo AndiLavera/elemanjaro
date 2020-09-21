@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Plank
+Type=Application
+Exec=/usr/bin/plank
+Icon=plank
+Comment=A dock from Pantheon
+X-GNOME-Autostart-enabled=true

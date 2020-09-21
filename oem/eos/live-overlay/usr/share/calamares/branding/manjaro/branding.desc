@@ -1,13 +1,13 @@
 ---
-componentName:  EOS
+componentName:  manjaro
 
 strings:
     productName:         EOS Linux
     shortProductName:    EOS
-    version:             1.0 OEM
-    shortVersion:        1.0 OEM
-    versionedName:       EOS Linux 1.0 "Hera" OEM
-    shortVersionedName:  EOS 1.0 OEM
+    version:             20.1 OEM
+    shortVersion:        20.1 OEM
+    versionedName:       EOS Linux 20.1 "Hera" OEM
+    shortVersionedName:  EOS 20.1 OEM
     bootloaderEntryName: EOS
 
 images:

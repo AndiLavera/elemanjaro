@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Wingpanel
+Type=Application
+Terminal=false
+Exec=/usr/bin/wingpanel
+Icon=Plank
+Comment=Start Elementary OS Wingpanel
+Categories=GNOME;GTK;System;
+X-GNOME-Autostart-enabled=true
