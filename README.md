@@ -6,7 +6,7 @@ This is a spin of manjaro gnome that utilizes the Pantheon DE.
 
 ## Building
 
-Install git & manjaro tools:
+Install `git` & `manjaro-tools`:
 
 ```sh
 pamac install manjaro-tools-iso git
@@ -30,6 +30,6 @@ buildiso -f -p eos -t ./
 
 ## Resources
 
-- (Manjaro Build Iso Docs)[https://wiki.manjaro.org/Build_Manjaro_ISOs_with_buildiso]
-- (Elementary OS)[https://elementary.io/]
-- (Manjaro Tools Repo)[https://gitlab.manjaro.org/tools/development-tools/manjaro-tools]
+- [Manjaro Build Iso Docs](https://wiki.manjaro.org/Build_Manjaro_ISOs_with_buildiso)
+- [Elementary OS](https://elementary.io/)
+- [Manjaro Tools Repo](https://gitlab.manjaro.org/tools/development-tools/manjaro-tools)
