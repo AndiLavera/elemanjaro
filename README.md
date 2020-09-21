@@ -4,6 +4,10 @@ This is a spin of manjaro gnome that utilizes the Pantheon DE.
 
 > Note: State: Alpha, I am using as a daily driver however I recommend to install it in a VM for testing.
 
+<p align="center">
+  <img src="./.images/preview.png" width="800">
+</p>
+
 ## Building
 
 Install `git` & `manjaro-tools`:
