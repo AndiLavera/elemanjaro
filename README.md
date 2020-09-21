@@ -1,4 +1,4 @@
-# Manjaro EOS
+# Elemanjaro
 
 This is a spin of manjaro gnome that utilizes the Pantheon DE. 
 
