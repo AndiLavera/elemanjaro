@@ -30,7 +30,7 @@ buildiso -f -p eos -t ./
 
 ## This vs Manjaro Gnome
 
-- `Gnome-shell` completely removes as it clashes with `Gala`
+- `Gnome-shell` completely removed as it clashes with `Gala`
 - `Gdm` replaced with `lightdm` with `pantheon-greeter` theme installed
 - Replaced numerous GNOME apps with the Elementary counter-part
 
