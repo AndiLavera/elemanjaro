@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Plank
-Type=Application
-Exec=/usr/bin/plank
-Icon=plank
-Comment=The main application dock
-X-GNOME-Autostart-enabled=true

@@ -48,6 +48,7 @@ pantheon
 switchboard-plug-desktop
 switchboard-plug-locale
 switchboard-plug-security-privacy
+# pantheon-notifications-git # AUR
 
 # CLI Tools
 pacui
